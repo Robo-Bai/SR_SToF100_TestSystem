@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainGUI</class>
+ <widget class="QMainWindow" name="MainGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1150</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1250</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SR-SToF100测试系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>700</width>
+      <height>650</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>700</width>
+      <height>650</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>测试结果图</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>681</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>10</y>
+      <width>491</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>当前状态</string>
+    </property>
+    <widget class="QTextBrowser" name="MainUi_textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>451</width>
+       <height>621</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>680</y>
+      <width>491</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>471</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="Test_start">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>开始测试</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Pause_Button">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>停止测试</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="display_Button">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>后台数据
+实时显示</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="Location_set">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>初始位置设置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Origin_Button">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>三轴回原点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="PDF_Button">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>生成PDF报告</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>20</y>
+      <width>20</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>660</y>
+      <width>711</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>660</y>
+      <width>491</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>679</y>
+      <width>701</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>信号强度图</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>24</y>
+       <width>681</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuOpen_file">
+     <property name="title">
+      <string>打开</string>
+     </property>
+     <widget class="QMenu" name="menuCSV">
+      <property name="title">
+       <string>CSV文件</string>
+      </property>
+      <addaction name="actionCSV_distance"/>
+      <addaction name="actionCSV_strength"/>
+      <addaction name="actionCSV_outliers"/>
+     </widget>
+     <addaction name="menuCSV"/>
+     <addaction name="actionpng_file"/>
+     <addaction name="actionPDF_report_file"/>
+    </widget>
+    <addaction name="menuOpen_file"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>调试</string>
+    </property>
+    <widget class="QMenu" name="menuSH200">
+     <property name="title">
+      <string>SH200调试</string>
+     </property>
+     <addaction name="actionSH200_open"/>
+     <addaction name="actionSH200_close"/>
+    </widget>
+    <addaction name="menu_motor"/>
+    <addaction name="menuSH200"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>驱动</string>
+    </property>
+    <addaction name="actionPCAN_USB"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>其他</string>
+    </property>
+    <addaction name="actionhelp"/>
+    <addaction name="actionVersion"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionX">
+   <property name="text">
+    <string>X</string>
+   </property>
+  </action>
+  <action name="actionZ">
+   <property name="text">
+    <string>Z </string>
+   </property>
+  </action>
+  <action name="menu_motor">
+   <property name="text">
+    <string>电机调试</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+M</string>
+   </property>
+  </action>
+  <action name="actionPCAN_USB">
+   <property name="text">
+    <string>打开PCAN-USB驱动</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+U</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+H</string>
+   </property>
+  </action>
+  <action name="actionVersion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+V</string>
+   </property>
+  </action>
+  <action name="actionOpen_PDF_update">
+   <property name="text">
+    <string>Open PDFreport_update</string>
+   </property>
+  </action>
+  <action name="actionOpen_png_file_Update">
+   <property name="text">
+    <string>Open png_file(Update)</string>
+   </property>
+  </action>
+  <action name="actionpng_file">
+   <property name="text">
+    <string>测距图</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+F</string>
+   </property>
+  </action>
+  <action name="actionPDF_report_file">
+   <property name="text">
+    <string>PDF报告</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+P</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+E</string>
+   </property>
+  </action>
+  <action name="actionCSV_distance">
+   <property name="text">
+    <string>测距数据.csv</string>
+   </property>
+  </action>
+  <action name="actionCSV_strength">
+   <property name="text">
+    <string>信号强度.csv</string>
+   </property>
+  </action>
+  <action name="actionSH200_open">
+   <property name="text">
+    <string>强制开启</string>
+   </property>
+  </action>
+  <action name="actionSH200_close">
+   <property name="text">
+    <string>强制关闭</string>
+   </property>
+  </action>
+  <action name="actionCSV_outliers">
+   <property name="text">
+    <string>异常率.csv</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainGUI</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>624</x>
+     <y>474</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

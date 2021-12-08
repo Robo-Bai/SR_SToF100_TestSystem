@@ -1,0 +1,6 @@
+目标文件:E:\Neethan\work\testsrtos\binHEBING\dst.bin   大小:0x0001F31C
+各部分大小如下:
+
+索引                        文件名                                            大小              偏移量            强制插入
+ 1      E:\Neethan\work\testsrtos\binHEBING\src_bootloader.bin              0x000039F4        0x00000000             否
+ 2      E:\Neethan\work\testsrtos\binHEBING\src_os.bin                      0x0001731C        0x00008000             否
